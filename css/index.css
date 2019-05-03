@@ -228,6 +228,22 @@ p {
   background-color: #111;
   color: #F6F6F6;
 }
+/*Stretch Goal -- Animation */
+.logo {
+  position: relative;
+  animation: mymove 5s 1;
+}
+.logo {
+  animation-timing-function: ease;
+}
+@keyframes mymove {
+  from {
+    left: 500px;
+  }
+  to {
+    left: 0px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
