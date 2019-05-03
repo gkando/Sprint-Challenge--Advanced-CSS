@@ -296,6 +296,7 @@ footer {
     width: 97%;
     padding: 0px 0px;
     height: 100%;
+    margin-bottom: 10px;
   }
 }
 .home .walk .walk-text {
@@ -304,6 +305,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
+    padding: 0 15px;
   }
 }
 .home .walk .walk-text h3 {
@@ -349,6 +351,7 @@ footer {
     order: -1;
     width: 95%;
     margin-left: auto;
+    margin-top: 15px;
   }
 }
 .home .walk .walk-img img {

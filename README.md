@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    Responsive web design requires a media query to detect the width of the browser.  It is smoother because the site's layout fluidly adjusts to the browser's width and resizes the width and height of the page's elements to show correctly.
+
+    Adaptive web design uses differing layouts for various device sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+    Design and code for mobile devices first (since they are the most commonly used to visit websites) and build your layout up from there as you gain more screen space toward desktop. 
+
+    Mobile first design utilizes 'min-width' media queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    Changes the font-size of the root HTML element to set 1rem = to 10px as opposed to 16px, which it would be had the root element size not been changed. 
+
 4. How would you describe preprocessing to someone new to CSS?
+    
+    A CSS Preprocessor allows you to use shorter, simpiler syntax to craft CSS code for complex websites.  For example, you can nest the styles of children elements under a parent element so improve tracibility and readability.  The preprocessor then takes your code and rewrites it in longhand CSS specifying the hierarchical relationship for each rule set based on how you nested the rules in shorthand. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    Nesting is my favorite concept.  It allows for coding CSS in shorthand essentially. 
+
+    Only concept I have an issue with is learning when to utilize mixins. 
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -116,7 +131,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [x] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [x] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
 * [x] Push your changes and create a pull request if you haven't already.
 
