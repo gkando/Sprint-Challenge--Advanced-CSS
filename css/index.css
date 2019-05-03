@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: #F6F6F6;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -10,7 +10,7 @@
 }
 .nav-style-link {
   display: block;
-  color: black;
+  color: #454A59;
   text-align: center;
   margin: 1px;
   padding: 12px 12px;
@@ -18,16 +18,7 @@
 }
 .nav-style-link-hover {
   background-color: #111;
-  color: white;
-}
-.walk-text .btn {
-  border-radius: 10px;
-  background-color: #22283A;
-  color: #F1F1F1;
-  font-size: 16px;
-  text-align: center;
-  padding: 1rem 2rem;
-  display: inline-block;
+  color: #F6F6F6;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -193,13 +184,13 @@ p {
 }
 .navigation {
   margin: auto;
-  margin-top: 15px;
-  max-width: 800px;
   width: 100%;
+  background-color: #F6F6F6;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  border-bottom: 2px #F1F1F1 solid;
   /*         @media @mobile {
         align-items: center;
         flex-direction: column;
@@ -215,7 +206,7 @@ p {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: #F6F6F6;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -227,7 +218,7 @@ p {
 }
 .navigation .nav-menu a {
   display: block;
-  color: black;
+  color: #454A59;
   text-align: center;
   margin: 1px;
   padding: 12px 12px;
@@ -235,7 +226,7 @@ p {
 }
 .navigation .nav-menu a:hover:not(.active) {
   background-color: #111;
-  color: white;
+  color: #F6F6F6;
 }
 footer {
   color: #22283B;
@@ -256,6 +247,12 @@ footer {
 .home img {
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .home img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -266,6 +263,16 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img:not(.blast) {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -283,8 +290,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-flow: column;
+    width: 97%;
+    padding: 0px 0px;
+    height: 100%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -292,9 +312,44 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  border-radius: 10px;
+  background-color: #22283A;
+  color: #F1F1F1;
+  font-size: 16px;
+  text-align: center;
+  padding: 1rem 2rem;
+  display: inline-block;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  border-radius: 10px;
+  background-color: #F1F1F1;
+  color: #22283A;
+  font-size: 16px;
+  text-align: center;
+  padding: 1rem 2rem;
+  display: inline-block;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    order: -1;
+    width: 95%;
+    margin-left: auto;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

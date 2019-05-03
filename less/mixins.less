@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:white;
+    background-color: @wild-sand;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -14,7 +14,7 @@
 
 .nav-style-link {
     display: block;
-    color: black;
+    color: @river-bend;
     text-align: center;
     margin: 1px;
     padding: 12px 12px;
@@ -23,26 +23,25 @@
 
 .nav-style-link-hover {
     background-color: #111;
-    color: white;
+    color: @wild-sand;
 }
 
 
 //Parametric Mixin
-.custom-btn(@radius, @color){
+.custom-btn(@radius, @color, @font-color){
 	border-radius: @radius;
     background-color: @color;
-    color: @sea-shell;
+    color: @font-color;
     font-size: 16px;
     text-align: center;
     padding: 1rem 2rem;
     // padding: 15px 32px;
     display: inline-block;
-}
-// Parametric Mixin Usage
-.walk-text {
-    .btn {
-        .custom-btn(10px, @btn-bg-color);
+    @media @phone {
+        width: 100%;
     }
 }
+
+
 
 
