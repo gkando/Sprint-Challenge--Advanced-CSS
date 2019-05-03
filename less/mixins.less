@@ -1,1 +1,48 @@
 // Mixins Here
+
+
+.nav-style {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.7rem;
+}
+
+.nav-style-link {
+    display: block;
+    color: black;
+    text-align: center;
+    margin: 1px;
+    padding: 12px 12px;
+    text-decoration: none;
+}
+
+.nav-style-link-hover {
+    background-color: #111;
+    color: white;
+}
+
+
+//Parametric Mixin
+.custom-btn(@radius, @color){
+	border-radius: @radius;
+    background-color: @color;
+    color: @sea-shell;
+    font-size: 16px;
+    text-align: center;
+    padding: 1rem 2rem;
+    // padding: 15px 32px;
+    display: inline-block;
+}
+// Parametric Mixin Usage
+.walk-text {
+    .btn {
+        .custom-btn(10px, @btn-bg-color);
+    }
+}
+
+

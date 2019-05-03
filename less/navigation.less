@@ -1,10 +1,8 @@
 // Navigation code here
 
 .navigation {
-
-    // margin: 30px 0;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 15px;
     max-width: 800px;
     width:  100%;
     display: flex;
@@ -20,36 +18,22 @@
         font-size: 4.2rem;
         width: 100%;
         text-align: center;
-        margin-bottom: 8px;
+        margin-bottom: 5px;
     }
 
     .nav-menu {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color:white;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        // padding: 20px 2%;
-        font-size: 1.8rem;
+        .nav-style();
 /*         @media @mobile {
             justify-content: space-around;
             width: 85%;
         } */
         
         a {
-            display: block;
-            color: black;
-            text-align: center;
-            margin: 1px;
-            padding: 12px 12px;
-            text-decoration: none;
+            .nav-style-link();
         }
         
         a:hover:not(.active) {
-            background-color: #111;
-            color: white;
+            .nav-style-link-hover();
         }   
     }
 }
