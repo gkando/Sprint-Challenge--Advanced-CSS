@@ -1,1 +1,53 @@
 // Navigation code here
+
+.navigation {
+    margin: auto;
+    width:  100%;
+    background-color: @wild-sand;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-bottom:  2px @sea-shell solid;
+
+/*         @media @mobile {
+        align-items: center;
+        flex-direction: column;
+        } */
+    
+    .logo {
+        font-size: 4.2rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .nav-menu {
+        .nav-style();
+/*         @media @mobile {
+            justify-content: space-around;
+            width: 85%;
+        } */
+        
+        a {
+            .nav-style-link();
+        }
+        
+        a:hover:not(.active) {
+            .nav-style-link-hover();
+        }   
+    }
+}
+
+/*Stretch Goal -- Animation */
+.logo { 
+    position: relative;
+    animation: mymove 5s 1;
+  }
+.logo {
+    animation-timing-function: ease;
+}
+@keyframes mymove {
+    from {left: 500px;}
+    to {left: 0px;}
+    }
